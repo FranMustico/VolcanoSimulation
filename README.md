@@ -1,10 +1,60 @@
-# VolcanoSimulation
-The rock trajectory simulation program is a powerful tool for understanding the physics of projectile motion. This software application is specifically designed to simulate the trajectory of a rock that is ejected from a volcano, taking into account various environmental factors such as air resistance.
+# Simulación Rocas Volcánicas
 
-The user is required to input the initial angle of launch and the initial velocity of the rock. The program then uses advanced physics algorithms to calculate the trajectory of the rock, taking into account various factors that affect its motion, such as air resistance, gravity, and wind direction.
+## Overview
+**Simulación Rocas Volcánicas** is a MATLAB program designed to simulate the trajectory of volcanic rocks ejected from the *Volcán de Fuego* in Guatemala. The program uses physics-based calculations to model the movement of rocks under the influence of gravity, air resistance, and varying initial conditions, providing a detailed analysis of their motion.
 
-The program provides a detailed graphic simulation of the rock's movement, allowing the user to observe changes in all of the key statistics that relate to the rock. These statistics may include changes in air resistance, velocity, and height, among others.
+## Features
 
-In addition to the graphic simulation, the program also provides a detailed table of key stats that are displayed for the user. These statistics include the total distance travelled by the rock, the maximum height achieved, the velocity on the x-axis, the velocity on the y-axis, and the resultant velocity of the rock.
+### Realistic Physics Modeling
+- Considers key physical parameters:
+  - Initial height: 3763 meters.
+  - Air density: 1.2 kg/m³.
+  - Rock mass: 16 kg.
+  - Rock area: 0.00298 m².
+  - Rock volume: 0.0000152 m³.
+  - Gravitational acceleration: -9.81 m/s².
+- Incorporates drag force based on velocity and air density.
 
-Overall, the rock trajectory simulation program is an invaluable tool for understanding the physics of projectile motion. It provides a detailed insight into the way that various factors affect the trajectory of a rock, allowing users to experiment with different initial conditions and environmental factors to explore the full range of possible outcomes. This program is especially useful for students and professionals in the fields of physics, geology, and other related disciplines.
+### User-Defined Inputs
+- **Launch angle**: Allows users to specify the angle of rock ejection (in degrees).
+- **Initial velocity**: User-defined initial velocity of the rock (in m/s).
+
+### Dynamic Simulation
+- Computes the rock's:
+  - Displacement in X and Y directions.
+  - Velocity components in X and Y.
+  - Resultant velocity at each timestep.
+- Animates the rock's trajectory with real-time updates.
+- Graphical visualization includes:
+  - Trajectory plot.
+  - Height and displacement labels.
+
+### Results Table
+- Generates a comprehensive table with the following columns:
+  - Displacement.
+  - Height.
+  - Velocity in X direction.
+  - Velocity in Y direction.
+  - Resultant velocity.
+
+## How to Use
+
+### Input Parameters
+1. Run the script `Simulacion.m` in MATLAB.
+2. Enter the required inputs when prompted:
+   - **Launch angle** (degrees): Specifies the angle of projection.
+   - **Initial velocity** (m/s): Sets the speed of the rock at launch.
+
+### Outputs
+- A real-time animation of the trajectory.
+- A detailed table of results displayed in the MATLAB console.
+
+## File Structure
+- **`Simulacion.m`**: The main script containing the simulation logic and visualization.
+
+## Purpose
+This project demonstrates the application of computational physics to model and analyze natural phenomena. It provides insights into the dynamics of volcanic eruptions and the factors affecting the trajectory of ejected rocks.
+
+## Acknowledgments
+- **MATLAB Toolboxes**: For animation and data visualization.
+- Inspiration from the study of volcanic activity at the *Volcán de Fuego* in Guatemala.
